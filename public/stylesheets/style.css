@@ -52,7 +52,7 @@ div.row > div.pin span.pin.gnd {
 }
 
 div.row > div.pin span.pin.power3v {
-    border-color: darkred;
+    border-color: #cb5913;
 }
 
 div.row > div.pin span.pin.power5v {
@@ -73,9 +73,12 @@ div.row > div.pin span.pin.i2c {
 }
 
 .desc {
-    color: #723c8c;
+    color: #501863;
     padding-left: 10px;
     font-weight: bold;
+}
+.input {
+    color: #98194e;
 }
 
 .relais {

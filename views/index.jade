@@ -18,8 +18,10 @@ block content
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 2 (SDA)
-                //div.pull-right
-                //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="2").gpio-checkbox
+                span.desc Buzzer
+                span.relais Board GPIO
+                div.pull-right
+                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="2").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
                 div.text-center
                     span.pin.gpio 03
@@ -32,8 +34,10 @@ block content
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 3 (SCL)
-                //div.pull-right
-                //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="3").gpio-checkbox
+                span.desc pin5 (libre)
+                span.relais Board GPIO
+                div.pull-right
+                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="3").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
                 div.text-center
                     span.pin.gpio 05
@@ -46,7 +50,7 @@ block content
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 4 (GPCLK0)
-                span.desc Sondes températures
+                span.desc.input Sondes températures
                 //div.pull-right
                 //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="4").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
@@ -59,7 +63,8 @@ block content
                 input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="14").gpio-checkbox
                 div.pull-right
                     span GPIO 14 (TXD)
-                    span.desc LED témoin Rpi
+                    span.desc LED TX
+                    span.relais Power
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5.system
                 span Ground
@@ -76,8 +81,10 @@ block content
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 17
-                //div.pull-right
-                //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="17").gpio-checkbox
+                span.desc Led Rpi
+                span.relais Power
+                div.pull-right
+                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="17").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
                 div.text-center
                     span.pin.gpio 11
@@ -85,12 +92,16 @@ block content
                 div.text-center
                     span.pin.gpio 12
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
-                //input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="18").gpio-checkbox
+                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="18").gpio-checkbox
                 div.pull-right
                     span GPIO 18 (PCM_C)
+                    span.desc pin12 (libre)
+                    span.relais Board GPIO
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 27 (PCM_D)
+                span.desc.input Btn Rpi
+                span.relais Power
                 //div.pull-right
                 //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="27").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
@@ -105,6 +116,8 @@ block content
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 22
+                span.desc.input Btn SSR
+                span.relais Power
                 //div.pull-right
                 //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="22").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
@@ -117,8 +130,8 @@ block content
                 input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="23").gpio-checkbox
                 div.pull-right
                     span GPIO 23
-                    span.desc Extracteur (vitesse 1)
-                    span.relais Relais #1
+                    span.desc Extract v1
+                    span.relais Relais #2
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5.system
                 span 3.3V
@@ -132,13 +145,15 @@ block content
                 input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="24").gpio-checkbox
                 div.pull-right
                     span GPIO 24
-                    span.desc Extracteur (vitesse 2)
-                    span.relais Relais #2
+                    span.desc Extract v2
+                    span.relais Relais #3
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 10 (MOSI)
-                //div.pull-right
-                //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="10").gpio-checkbox
+                span.desc Led extract v1
+                span.relais Front
+                div.pull-right
+                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="10").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
                 div.text-center
                     span.pin.gpio 19
@@ -151,8 +166,10 @@ block content
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 9 (MISO)
-                //div.pull-right
-                //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="9").gpio-checkbox
+                span.desc Led extract v2
+                span.relais Front
+                div.pull-right
+                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="9").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
                 div.text-center
                     span.pin.gpio 21
@@ -163,11 +180,13 @@ block content
                 input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="25").gpio-checkbox
                 div.pull-right
                     span GPIO 25
-                    span.desc Éclairage LED
-                    span.relais Relais #3
+                    span.desc Éclairage
+                    span.relais Relais #4
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 11 (SCKL)
+                span.desc.input Btn éclairage
+                span.relais Front
                 //div.pull-right
                 //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="11").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
@@ -177,9 +196,11 @@ block content
                 div.text-center
                     span.pin.gpio 24
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
-                //input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="8").gpio-checkbox
+                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="8").gpio-checkbox
                 div.pull-right
                     span GPIO 8 (CE0)
+                    span.desc
+                    span.relais Relais #5
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5.system
                 span Ground
@@ -190,9 +211,11 @@ block content
                 div.text-center
                     span.pin.gpio 26
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
-                //input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="7").gpio-checkbox
+                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="7").gpio-checkbox
                 div.pull-right
                     span GPIO 7 (CE1)
+                    span.desc
+                    span.relais Relais #6
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5.system
                 span ID_SD
@@ -208,6 +231,8 @@ block content
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 5
+                span.desc.input Btn G4
+                span.relais Front
                 //div.pull-right
                 //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="5").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
@@ -222,6 +247,8 @@ block content
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 6
+                span.desc.input Btn G3
+                span.relais Front
                 //div.pull-right
                 //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="6").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
@@ -234,12 +261,13 @@ block content
                 input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="12").gpio-checkbox
                 div.pull-right
                     span GPIO 12
-                    span.relais Relais #4
+                    span.desc
+                    span.relais Relais #7
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 13
-                span.desc Présence tension
-                span.relais Relais #8
+                span.desc.input Btn G2
+                span.relais Front
                 //div.pull-right
                     //input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="13").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
@@ -254,6 +282,8 @@ block content
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 19 (MISO)
+                span.desc.input Btn G1
+                span.relais Front
                 //div.pull-right
                 //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="19").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
@@ -266,14 +296,15 @@ block content
                 input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="16").gpio-checkbox
                 div.pull-right
                     span GPIO 16
-                    span.relais Relais #5
+                    span.desc
+                    span.relais Relais #8
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
                 span GPIO 26
-                span.desc Alimentation caisson
-                span.relais SSR
-                div.pull-right
-                    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="26").gpio-checkbox
+                span.desc.input Btn extract
+                span.relais Front
+                //div.pull-right
+                //    input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="26").gpio-checkbox
             div.col-sm-1.hidden-xs.pin
                 div.text-center
                     span.pin.gpio 37
@@ -284,7 +315,8 @@ block content
                 input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="20").gpio-checkbox
                 div.pull-right
                     span GPIO 20 (MOSI)
-                    span.relais Relais #6
+                    span.desc Alimentation caisson
+                    span.relais SSR
         div.row
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5.system
                 span Ground
@@ -295,7 +327,8 @@ block content
                 div.text-center
                     span.pin.gpio 40
             div.col-xs-6.col-sm-5.col-md-5.col-lg-5
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="21").gpio-checkbox
+                //input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="21").gpio-checkbox
                 div.pull-right
                     span GPIO 21 (SCKL)
-                    span.relais Relais #7
+                    span.desc.input UPS
+                    span.relais Out Relais #1
